@@ -308,24 +308,13 @@
                             <input type='text' name='username' required>
                         </div>
                         <div>
-                            <label>Номер телефона (с кодом) <span>*</span></label>
+                            <label>Номер телефона <span>*</span></label>
                             <input type='text' name='usernumber' required>
                         </div>
                         <input class="send-mail" type='submit' value='Послать заявку'>
                     </div>
                 </form>
-                <!--<form action="">
-                    <div>
-                        <label>Имя</label>
-                        <input type="email" class="form__control" placeholder="Введите свой email">
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="text" class="form__control" placeholder="Введите свой email">
-                    </div>
-                    <button style="margin-top: 10px;">Отправить</button>
-                </form>
-            -->
+               
             </div>
         </div>
     </section>
@@ -335,6 +324,11 @@
     </div>
     <script defer src="./site.js/filter.js"></script>
     <script defer src="./site.js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Slider(document.querySelector('.carousel'));
+        });
+      </script>
 </body>
 
 </html>
