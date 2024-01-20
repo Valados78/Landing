@@ -1,3 +1,4 @@
+
 body {
     font-family: "Raleway", sans-serif;
     color: #213053;
@@ -174,7 +175,7 @@ header a {
     height: 80px !important;
 }
 
-.models__g {
+.models__g, .models__e, .models__s {
     width: 100%;
     height: 100%;
 }
@@ -188,6 +189,8 @@ header a {
 .mod1__img, .mod2__img, .mod3__img {
     border: 2px solid;
     margin-right: 1%;
+    max-height: 290px;
+    max-width: 300px;
 }
 
 
