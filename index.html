@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>My-Giro</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!--Шапка-->
+    <header>
+        <img class="header__logo" src="img/logo-blue.png">
+        <div class="header__controls">
+            <img src="img/phone-blue.png" alt="telefon" style="padding: 20px 10px 0 0;">
+            <a href="#contacts">8-900-999-99-99</a>
+            <button>Заказать</button>
+        </div>
+    </header>
+    <!--Описание-->
+    <section class="about">
+        <div class="about__info">
+            <h1>My-Giro</h1>
+            <p>Покупайте или арендуйте экологичные гироскутеры для активной жизни
+            </p>
+            <button>Узнать подробности</button>
+        </div>
+        <div>
+            <img class="about__image" src="img/giroscut.png">
+        </div>
+    </section>
+    <!--Слайдер-->
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+            <!-- Слайды -->
+            <div class="swiper-slide">
+                <img src="img/advantages/1.png" class="slU">
+                <p class="slU">Крутые приколы</p>
+                <img src="img/kod-oshibki-giroskutera.webp">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/advantages/1.png" class="slU">
+                <p class="slU">Крутые приколы</p>
+                <img src="img/useful_info/2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/advantages/1.png" class="slU">
+                <p>Крутые приколы</p>
+                <img src="img/useful_info/3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/advantages/1.png" class="slU">
+                <p>Крутые приколы</p>
+                <img src="img/useful_info/4.jpg">
+            </div>
+
+        </div>
+        <!-- Пагинация -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Кнопки -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+
+    </div>
+    <section class="giro__features">
+        <h2>Особенности</h2>
+        <h3>Гироскутеры</h3>
+        <p>Начнём с минусов:
+
+            Трясёт. 6-дюймовые колёса «самокатного» типа достаточно жёсткие – естественно, что они отрабатывают
+            микропрофиль дороги хуже, чем классические колёса с покрышками. Но, за счёт того, что гироскутер может ехать
+            по пешеходным дорожкам, минус этот минусом и не является: просто выбирайте путь с хорошим асфальтом, за
+            пределами автодорог это достаточно просто сделать. Или сразу же выбирайте гироскутер с колесами 10 дюймов;
+
+            <br> <br> Нет сиденья. А зачем оно Вам, если поездка длится в среднем 10-15 минут? Гироскутер не
+            предназначен для путешествий на дальние расстояния, его стихия – быстрые и короткие поездки;
+
+            <br> <br> Только для одного. Вот с этим ничего не поделать: гироскутер - это именно личное средство
+            передвижения. Если Вам нужен транспорт для компании, выбирайте что-нибудь другое.
+
+
+
+
+            <br> <br> С минусами разобрались, теперь можем перейти к преимуществам гироскутеров. Итак, в сравнении с
+            почти любым другим видом моторного транспорта, гироцикл может похвастаться:
+
+
+
+            <br> <br> Исключительной компактностью и небольшим весом. Он легко помещается и в специальный чехол, и в
+            рюкзак, и в спортивную сумку – да его даже просто в руках нести удобно. Соответственно, проблема с парковкой
+            решена раз и навсегда: добрались до места, убрали гироскутер в сумку и спокойно идёте дальше;
+
+            <br> <br> Экономичностью. Мини-сигвей и сам по себе стоит недорого, и обслуживания не требует, и бензин ему
+            не нужен. Просто не забывайте ставить его на зарядку, и никаких проблем у Вас не будет;
+
+            <br> <br> Доступностью. На почти любой традиционный моторный транспорт нужны права, а на гироскутер – нет;
+
+            <br> <br> Манёвренностью. Вы себе представляете поездку на мопеде через толпу людей, по тротуару? А на
+            гироскутере – запросто. Юркая и компактная двухколёсная платформа быстро доставит Вас до места в любой час
+            пик: где-то будет удобно ехать по тротуару, где-то – по обочине. В любом случае, Вы всегда сможете выбрать
+            оптимально подходящий путь;
+
+            <br> <br> Простотой в освоении. Чтобы научиться кататься на гироскутере взрослому человеку достаточно 10-15
+            минут. Купили, немного попрактиковались, и можно пользоваться!
+
+            <br> <br> Этих преимуществ гироскутера вполне достаточно для того, чтобы в своей нише данный вид транспорта
+            являлся одним из самых лучших вариантов!
+        </p>
+        <h3>Электросамокаты</h3>
+        <p>Начнём с минусов:
+
+            <br> <br> ахахахахахахахахахаахахахахаха Электросамокаты
+
+        </p>
+        <h3>Сигвеи</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque convallis arcu. Pellentesque
+            bibendum ligula id imperdiet lobortis. Donec eget tempus diam, et tincidunt elit. Nullam dignissim, elit
+            molestie suscipit mollis, sem diam bibendum arcu, eget tempor orci sem id nunc. Etiam vestibulum tempor
+            purus vel iaculis. Nullam vitae libero nec ex ultrices tincidunt. Sed quis gravida nulla. Morbi iaculis arcu
+            at neque dictum fringilla. Praesent at dolor porta, dignissim massa a, convallis erat. Nam vel metus id mi
+            pharetra rutrum. Aenean dictum quis ipsum quis euismod. Cras vel imperdiet mi. Aenean scelerisque lacus in
+            urna pulvinar efficitur. Sed quis fringilla nibh.
+
+            <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et urna eu lacus consectetur
+            hendrerit. In fermentum nec nunc nec semper. Donec ac quam diam. Aliquam vestibulum, dui sit amet semper
+            hendrerit, leo orci mattis velit, feugiat malesuada magna nunc id massa. Donec pharetra porttitor odio ut
+            sagittis. Quisque eu consectetur arcu, at congue erat. Etiam ut consequat augue.
+
+            <br> <br> Phasellus in turpis vel diam sollicitudin aliquam ac tincidunt est. Sed ornare magna at lacinia
+            dictum. Quisque id tempor nunc. Morbi hendrerit auctor viverra. Maecenas tempor elit sit amet finibus
+            luctus. Vivamus eget rutrum augue. Donec malesuada nulla eget purus semper, ut lacinia mi finibus. Nunc
+            sapien orci, hendrerit quis elit at, faucibus sagittis lorem. Suspendisse metus velit, feugiat eu quam ac,
+            euismod elementum risus. Duis sed mauris posuere, ultricies sem id, fermentum sapien. In enim ligula,
+            accumsan ac commodo ac, viverra vitae sapien. Maecenas dolor odio, elementum eu dolor quis, laoreet feugiat
+            arcu. Maecenas id aliquam dolor. In at dolor ut orci sodales finibus bibendum sit amet turpis. Mauris
+            dignissim rhoncus velit.
+        </p>
+    </section>
+    <section class="goods">
+        <h2>Модельный ряд</h2>
+        <div class="models__g">
+            <h3 style="padding: 1%;">Гироскутеры</h3>
+            <div class="mod1" style="display: flex;">
+                <div class="mod1__img"><img src="img/catalog/giroscooters/1.jpg" style="padding: 1%;" alt="i1"></div>
+                <div class="discrip" style="display: flex; overflow: auto; width: auto; height: auto;">
+                    <h4 style="padding: 20%; font-size: larger;">Гироскутер Smart Balance 10 Красный.
+                        <br>
+                        <span style="color: #f0731a;">6500 р</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="mod2" style="display: flex;">
+                <div class="mod2__img"><img src="img/catalog/giroscooters/2.jpg" style="padding: 1%;" alt="i1"></div>
+                <div class="discrip" style="display: flex; overflow: auto; width: auto; height: auto;">
+                    <h4 style="padding: 20%; font-size: larger;">Гироскутер Smart Balance Premium 10 Цветные Молнии
+                        <br>
+                        <span style="color: #f0731a;">10 990 р</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="mod3" style="display: flex;">
+                <div class="mod3__img"><img src="img/catalog/giroscooters/3.jpg" style="padding: 1%;" alt="i1"></div>
+                <div class="discrip" style="display: flex; overflow: auto; width: auto; height: auto;">
+                    <h4 style="padding: 20%; font-size: larger;">Гироскутер Smart Balance SUV Черная Молния 10.5" Premium PRO
+                        <br>
+                        <span style="color: #f0731a;">8590 р</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="models__e">
+            <h3>Электросамокаты</h3>
+            <div class="mod1">
+                <h4>1. Xiaomi Mijia Electric Scooter m187 Black черный</h4>
+                <img src="img/catalog/electric_scooters/1.jpg" alt="i1">
+                <p>20 480 р</p>
+            </div>
+            <p class="mod2">
+            <h4>2. Электросамокат KUGOO S4 (8800mAh)</h4>
+            <img src="img/catalog/electric_scooters/2.jpg" alt="i2">
+            <p>13 480 р</p>
+        </div>
+        <div class="mod3">
+            <h4>3. Электросамокат SUBOR D9</h4>
+            <img src="img/catalog/electric_scooters/3.jpg" alt="i3">
+            <p>11 790 р</p>
+        </div>
+        <div class="models__s">
+            <h3>Сигвеи</h3>
+            <div class="mod1">
+                <h4>1. Сигвей Xiaomi Ninebot mini Pro Black (Черный)</h4>
+                <img src="img/catalog/segways/1.jpg" alt="i1">
+                <p>31 480 р</p>
+            </div>
+            <p class="mod2">
+            <h4>2. Сигвей Xiaomi Ninebot mini Pro White (Белый)</h4>
+            <img src="img/catalog/segways/2.jpg" alt="i2">
+            <p>31 480 р</p>
+        </div>
+        <div class="mod3">
+            <h4>3. Сигвей Xiaomi Ninebot mini White (Белый)</h4>
+            <img src="img/catalog/segways/3.jpg" alt="i3">
+            <p>14 790 р</p>
+        </div>
+        <div class="models__s">
+            <div class="models__sig">
+
+
+
+            </div>
+    </section>
+    <section class="form--sub">
+        <div class="sub">
+            <h2 class="mt">Хотите знать больше чем остальные?</h2>
+            <p>Оставьте свою почту и получайте информацию о интересных акциях первыми</p>
+            <form action="">
+                <div>
+                    <label>Имя</label>
+                    <input type="email" class="form__control" placeholder="Введите свой email">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" class="form__control" placeholder="Введите свой email">
+                </div>
+                <button style="margin-top: 10px;">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <div id='follow'>
+        <a href='#top' target='_blank'>
+            <img src='img/go_up.png' border=0 alt='fix_bt' title='buttonup' /></a>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
