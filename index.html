@@ -81,6 +81,7 @@
         </script>
 
     </div>
+    <!--Особенности-->
     <section class="giro__features">
         <h2>Особенности</h2>
         <h3>Гироскутеры</h3>
@@ -155,9 +156,15 @@
             dignissim rhoncus velit.
         </p>
     </section>
+    <!--Товары-->
     <section class="goods">
         <h2>Модельный ряд</h2>
-        <div class="models__g">
+        <div class="products-filter-items__block">
+            <div id="filter__giro" class="product-filter__item active" onclick="changeFilter(event, 'giro')">Гироскутеры</div>
+            <div id="filter__scooter" class="product-filter__item active" onclick="changeFilter(event, 'scooter')">Электросамокаты</div>
+            <div id="filter__sigway" class="product-filter__item active" onclick="changeFilter(event, 'sigway')">Сигвеи</div>
+          </div>
+        <div class="models__g" id="products-list__giro">
             <h3 style="padding: 1%;">Гироскутеры</h3>
             <div class="mod1" style="display: flex;">
                 <div class="mod1__img"><img src="img/catalog/giroscooters/1.jpg" alt="i1"></div>
@@ -180,14 +187,15 @@
             <div class="mod3" style="display: flex;">
                 <div class="mod3__img"><img src="img/catalog/giroscooters/3.jpg" style="width: 100%;" alt="i1"></div>
                 <div class="discrip" style="display: flex; overflow: auto; width: auto; height: auto;">
-                    <h4 style="padding: 20%; font-size: larger;">Гироскутер Smart Balance SUV Черная Молния 10.5" Premium PRO
+                    <h4 style="padding: 20%; font-size: larger;">Гироскутер Smart Balance SUV Черная Молния 10.5"
+                        Premium PRO
                         <br>
                         <span style="color: #f0731a;">8590 р</span>
                     </h4>
                 </div>
             </div>
         </div>
-        <div class="models__e">
+        <div class="models__e" id="products-list__scooter">
             <h3 style="padding: 1%;">Электросамокаты</h3>
             <div class="mod1" style="display: flex;">
                 <div class="mod1__img"><img src="img/catalog/electric_scooters/1.jpg" alt="i1"></div>
@@ -208,7 +216,8 @@
                 </div>
             </div>
             <div class="mod3" style="display: flex;">
-                <div class="mod3__img"><img src="img/catalog/electric_scooters/3.jpg" style="width: 100%;" alt="i1"></div>
+                <div class="mod3__img"><img src="img/catalog/electric_scooters/3.jpg" style="width: 100%;" alt="i1">
+                </div>
                 <div class="discrip" style="display: flex; overflow: auto; width: auto; height: auto;">
                     <h4 style="padding: 20%; font-size: larger; overflow: hidden;">Электросамокат SUBOR D9
                         <br>
@@ -217,7 +226,7 @@
                 </div>
             </div>
         </div>
-        <div class="models__s">
+        <div class="models__s" id="products-list__sigway">
             <h3 style="padding: 1%;">Сигвеи</h3>
             <div class="mod1" style="display: flex;">
                 <div class="mod1__img"><img src="img/catalog/segways/1.jpg" alt="i1"></div>
@@ -248,30 +257,84 @@
             </div>
         </div>
     </section>
+    <!--Фильтер-->
+    <section class="filter">
+
+    </section>
+    <!--Консультанты-->
+    <section class="consul">
+        <h2>Наши консультанты</h2>
+        <div class="consul__block">
+            <div class="cons1">
+                <div><img src="img/consultants/1.png" alt="1"></div>
+                <div class="cons1__dis">
+                    <h3>Елена 22 года<br><span>Ищет кого проконсультировать</span></h3>
+                </div>
+            </div>
+            <div class="cons2">
+                <div><img src="img/consultants/2.png" alt="2"></div>
+                <div class="cons2__dis">
+                    <h3>Наталья 99 лет<br><span>Специалист с опытом</span></h3>
+                </div>
+            </div>
+            <div class="cons3">
+                <div><img src="img/consultants/3.png" alt="3"></div>
+                <div class="cons3__dis">
+                    <h3>Владимир 25 лет<br><span>Просто хороший парень</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Подписка-->
     <section class="form--sub">
         <div class="sub">
+            <h2>О нас</h2>
+            <h3>В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
+                известных мировых производителей.
+                <br> Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.
+                <br> Купить гироскутер, электросамокат или сигвей недорого,
+                вы можете в нашем интернет-магазине в любое время, когда
+                вам удобно.
+                <br>Доставка заказов осуществляется бесплатно, в любую точку России.
+                <br>Так же, вы можете заказать гироскутер, сигвей или электросамокат по низкой цене, позвонив нам.
+                Или сделайте заказ, пообщавшись с нашим онлайн-консультантом.
+                <br>Продажа гироскутеров, электросамокатов и сигвеев, осуществляется напрямую, от производителей.
+                <br>Поэтому, в нашем интернет-магазине самые лучшие цены.
+            </h3>
             <h2 class="mt">Хотите знать больше чем остальные?</h2>
             <p>Оставьте свою почту и получайте информацию о интересных акциях первыми</p>
-            <form action="">
-                <div>
-                    <label>Имя</label>
-                    <input type="email" class="form__control" placeholder="Введите свой email">
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input type="text" class="form__control" placeholder="Введите свой email">
-                </div>
-                <button style="margin-top: 10px;">Отправить</button>
-            </form>
+            <div class="sub__form">
+                <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
+                    <div class="form-zvonok"> 
+                      <div>
+                        <label>Имя <span>*</span></label>
+                        <input type='text' name='username' required></div>
+                      <div>
+                        <label>Номер телефона (с кодом) <span>*</span></label>
+                        <input type='text' name='usernumber' required></div>
+                      <input class="send-mail" type='submit' value='Послать заявку'>
+                    </div>
+                    </form>
+                <!--<form action="">
+                    <div>
+                        <label>Имя</label>
+                        <input type="email" class="form__control" placeholder="Введите свой email">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" class="form__control" placeholder="Введите свой email">
+                    </div>
+                    <button style="margin-top: 10px;">Отправить</button>
+                </form>
+            -->
+            </div>
         </div>
     </section>
     <div id='follow'>
         <a href='#top' target='_blank'>
             <img src='img/go_up.png' border=0 alt='fix_bt' title='buttonup' /></a>
     </div>
-    <footer>
-
-    </footer>
+    <script defer src="./site.js/filter.js"></script>
 </body>
 
 </html>
